@@ -125,6 +125,7 @@ span {
 .heading-title {
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .heading-content p {
@@ -204,6 +205,66 @@ span {
 
 }
 
+/* latest-deals section styles */
+.latest-deals {
+    margin-top: 120px;
+}
+
+.secondary-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 28px;
+    margin-top: 100px;
+}
+
+#zabo-image {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#zabo-content h3 {
+    font-size: 2rem;
+}
+
+#zabo-content h4 {
+    font-size: 1.5rem;
+}
+
+.secondary-card {
+    position: relative;
+}
+
+.secondary-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.secondary-card-content h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.secondary-card-content h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.secondary-card-image img {
+    width: 100%;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .container {
@@ -245,7 +306,7 @@ span {
         max-width: 100%;
     }
 
-    /* card ssection  */
+    /* card section  */
     .plants-card {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -270,7 +331,23 @@ span {
         font-size: 1rem;
     }
 
-    .badge{
+    .badge {
         display: none;
     }
+
+    .secondary-card-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .secondary-card-image img {
+        width: 360px;
+    }
+
+    #zabo-content h3 {
+        font-size: 1.5rem;
+    }
+    #zabo-content h4{
+    font-size: 1rem;
+}
 }
