@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+/* common styles */
+
+.noto-serif-font,
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.inter-font,
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* navbar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.website-logo img {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+}
+
+#shop,
+#about-us {
+    color: rgba(137, 135, 161, 1);
+}
+
+#home {
+    font-weight: bold;
+}
+
+/* banner section  */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    align-items: last baseline;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-content span {
+    color: rgba(233, 90, 8, 1.00);
+}
+
+.banner-image {
+    position: relative;
+    top: 7px;
+
+}
+
+.banner-image img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 0 16px;
+    }
+
+    /* nav section  */
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .website-logo img {
+        width: 50%;
+    }
+
+    #shop,
+    #about-us,
+    #home {
+        display: none;
+    }
+
+    /* banner section  */
+    .banner {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+}
