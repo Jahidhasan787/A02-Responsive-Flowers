@@ -405,8 +405,12 @@ span {
     }
 
     .secondary-card-container {
-        grid-template-columns: repeat(1, 1fr);
+       display: flex;
+       flex-direction: column;
+    }
 
+    #zabo-image{
+        order: 1;
     }
 
     .secondary-card-image img {
