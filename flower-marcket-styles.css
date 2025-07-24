@@ -227,7 +227,7 @@ span {
     font-size: 2rem;
 }
 
-#zabo-content h4 {
+#zabo-content h4 a {
     font-size: 1.5rem;
 }
 
@@ -250,9 +250,9 @@ span {
 
 }
 
-.secondary-card-content h4 {
+.secondary-card-content h4 a {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
